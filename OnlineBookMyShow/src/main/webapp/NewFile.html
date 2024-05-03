@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Entity Attributes</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #dddddd;
+    }
+
+    td:first-child {
+        width: 20%;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>A unique identifier for the product.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>The name of the product.</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>A text description of the product.</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>The price of the product.</td>
+    </tr>
+    <tr>
+        <td>categories</td>
+        <td>An array of categories (strings) the product belongs to.</td>
+    </tr>
+    <tr>
+        <td>attributes</td>
+        <td>An array of key-value pairs (objects) for additional attributes such as size, color, brand, etc.</td>
+    </tr>
+    <tr>
+        <td>availability</td>
+        <td>An object containing:</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;inStock</td>
+        <td>A boolean indicating if the product is in stock.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;quantity</td>
+        <td>An integer representing the available quantity.</td>
+    </tr>
+    <tr>
+        <td>ratings</td>
+        <td>An array of objects representing user ratings, each with:</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;userId</td>
+        <td>A unique identifier for the user who gave the rating.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;rating</td>
+        <td>A numerical rating value.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;comment</td>
+        <td>An optional text comment on the rating.</td>
+    </tr>
+</table>
+
+</body>
+</html>
